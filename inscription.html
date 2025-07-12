@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clinique Santé Espérance</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Navigation responsive -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Clinique Espérance</h1>
+      <button class="burger" id="burger">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#equipe">Équipe</a></li>
+        <li><a href="#rendezvous">Rendez-vous</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="dropdown">
+  <a href="#">Compte <i class="fa-solid fa-caret-down"></i></a>
+  <ul class="dropdown-menu">
+    <li><a href="connexion.html">Connexion</a></li>
+    <li><a href="inscription.html">Inscription</a></li>
+  </ul>
+</li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Section Accueil -->
+  <header class="hero" id="accueil">
+    <h1>Bienvenue à la Clinique Santé Espérance</h1>
+    <p>Votre santé, notre priorité.</p>
+    <a href="#rendezvous" class="btn">Prendre rendez-vous</a>
+  </header>
+  <div class="form-container">
+    <h2>Créer un compte</h2>
+    <form action="register.php" method="post">
+      <input type="text" name="nom" placeholder="Nom complet" required />
+      <input type="email" name="email" placeholder="Adresse e-mail" required />
+      <input type="password" name="password" placeholder="Mot de passe" required />
+      <input type="password" name="confirm" placeholder="Confirmer mot de passe" required />
+      <button type="submit">S'inscrire</button>
+      <p class="link">Déjà un compte ? <a href="login.html">Se connecter</a></p>
+    </form>
+  </div>
+ <!-- Contact -->
+  <section class="section contact" id="contact">
+    <h2>Contact & Localisation</h2>
+    <p>Email : contact@clinique-esperance.bj</p>
+    <p>Téléphone : +229 90 00 00 00</p>
+    <p>Adresse : 123 Rue de la Santé, Cotonou</p>
+    <iframe src="https://maps.google.com/maps?q=Cotonou&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Clinique Santé Espérance - Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

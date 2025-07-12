@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin - Clinique Espérance</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<section class="form-article-container">
+  <h2>Modifier l’article</h2>
+  <form action="modifier_article.php?id=1" method="POST" enctype="multipart/form-data" class="article-form">
+
+    <label for="titre">Titre de l’article</label>
+    <input
+      type="text"
+      id="titre"
+      name="titre"
+      value="Titre existant"
+      placeholder="Titre de l'article"
+      required
+    />
+
+    <label for="description">Description</label>
+    <textarea
+      id="description"
+      name="description"
+      placeholder="Brève description"
+      rows="3"
+      required
+    >Texte description existante...</textarea>
+
+    <label for="contenu">Contenu complet</label>
+    <textarea id="contenu" name="contenu" placeholder="Contenu détaillé..." rows="6" required
+    >Contenu de l'article déjà enregistré...</textarea>
+
+    <label for="image">Changer l’image (facultatif)</label>
+    <input
+      type="file"
+      id="image"
+      name="image"
+      accept="image/*"
+      title="Changer l'image de l'article"
+    />
+
+    <button type="submit">Mettre à jour</button>
+  </form>
+</section>

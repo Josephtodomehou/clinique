@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestion des membres</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<section class="form-article-container">
+  <div class="admin-articles-header">
+    <a href="interface.html" class="btn small add-btn">
+      <i class="fas fa-user-plus"></i> Retour à l'interface
+    </a>
+    <h2>Gestion de l'équipe médicale</h2>
+    <a href="ajoutmembre.html" class="btn small add-btn">
+      <i class="fas fa-user-plus"></i> Ajouter un membre
+    </a>
+  </div>
+
+  <div class="table-responsive">
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>Photo</th>
+          <th>Nom</th>
+          <th>Spécialité</th>
+          <th>Rôle</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Exemple membre -->
+        <tr>
+          <td><img src="img/medecin1.jpg" alt="Dr Awa" class="article-thumb"></td>
+          <td>Dr Awa Kouassi</td>
+          <td>Pédiatre</td>
+          <td>Médecin chef</td>
+          <td>
+            <a href="modifiemembre.html" class="btn small edit">
+              <i class="fas fa-edit"></i> Modifier
+            </a>
+            <a href="supprimer_membre.php?id=1" onclick="return confirmerSuppression();" class="btn small delete">
+              <i class="fas fa-trash"></i> Supprimer
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="img/medecin2.jpg" alt="Dr Kossi" class="article-thumb"></td>
+          <td>Dr Kossi Mensah</td>
+          <td>Cardiologue</td>
+          <td>Assistant</td>
+          <td>
+            <a href="modifiemembre.html" class="btn small edit">
+              <i class="fas fa-edit"></i> Modifier
+            </a>
+            <a href="supprimer_membre.php?id=2" onclick="return confirmerSuppression();" class="btn small delete">
+              <i class="fas fa-trash"></i> Supprimer
+            </a>
+          </td>
+        </tr>
+        <!-- Ajoute d'autres membres ici -->
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<script>
+  function confirmerSuppression() {
+    return confirm("Êtes-vous sûr de vouloir supprimer ce membre ?");
+  }
+</script>
+
+</body>
+</html>

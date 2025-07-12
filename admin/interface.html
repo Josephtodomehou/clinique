@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin - Clinique Espérance</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="admin-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Admin</h2>
+      <ul>
+          <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
+        <li><a href="equipe.html"><i class="fas fa-users"></i> Équipe</a></li>
+        <li><a href="#"><i class="fas fa-user-tag"></i> Rôles</a></li>
+        <li><a href="#"><i class="fas fa-calendar-alt"></i> Rendez-vous</a></li>
+        <li><a href="#"><i class="fas fa-comments"></i> Commentaires</a></li>
+      </ul>
+    </aside>
+
+    <!-- Contenu principal -->
+    <main class="admin-main">
+      <header class="admin-header">
+        <h1>Tableau de bord</h1>
+        <a href="../index.html" class="btn small">Retour au site</a>
+      </header>
+
+       <section class="dashboard-grid">
+        <div class="card admin-card">
+          <h3><i class="fas fa-users"></i> Membres de l'équipe</h3>
+          <p>Gérez les médecins, leur rôle, leurs informations et affectations.</p>
+          <a href="#" class="btn small">Voir plus</a>
+        </div>
+        <div class="card admin-card">
+          <h3><i class="fas fa-calendar-alt"></i> Rendez-vous</h3>
+          <p>Consultez, modifiez ou supprimez les rendez-vous patients.</p>
+          <a href="#" class="btn small">Voir plus</a>
+        </div>
+        <div class="card admin-card">
+          <h3><i class="fas fa-comments"></i> Commentaires</h3>
+          <p>Modérez les commentaires publiés par les visiteurs du site.</p>
+          <a href="#" class="btn small">Voir plus</a>
+        </div>
+        <div class="card admin-card">
+          <h3><i class="fas fa-blog"></i> Blog</h3>
+          <p>Publiez ou mettez à jour les articles et les conseils santé.</p>
+          <a href="#" class="btn small">Voir plus</a>
+        </div>
+      </section> 
+
+    <section class="admin-articles">
+  <div class="admin-articles-header">
+    <h2>Gestion des articles</h2>
+    <a href="ajoutarticle.html" class="btn small add-btn"><i class="fas fa-plus"></i> Ajouter un article</a>
+  </div>
+
+  <div class="table-responsive">
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Titre</th>
+          <th>Description</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="../images/im2.jpg" alt="Article 1" class="article-thumb"></td>
+          <td>Comment prévenir l'hypertension</td>
+          <td>Des conseils simples pour garder une tension normale.</td>
+          <td>
+             <a href="Modifiearticle.html" class="btn small edit"><i class="fas fa-edit"></i> Modifier</a>
+            <button class="btn-delete"><i class="fas fa-trash"></i> Supprimer</button>
+            </td>
+
+        </tr>
+        <tr>
+          <td><img src="../images/im1.jpg" alt="Article 2" class="article-thumb"></td>
+          <td>Alimentation et immunité</td>
+          <td>Quels aliments renforcent vos défenses naturelles ?</td>
+          <td>
+            
+                        <a href="Modifiearticle.html" class="btn small edit"><i class="fas fa-edit"></i> Modifier</a>
+                        <button class="btn-delete"><i class="fas fa-trash"></i> Supprimer</button>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+    </main>
+  </div>
+
+</body>
+</html>

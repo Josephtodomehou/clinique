@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ajouter un membre</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<section class="form-article-container">
+    <a href="interface.html" class="btn small add-btn">
+      <i class="fas fa-user-plus"></i> Retour à l'interface
+    </a>
+  <h2>Ajouter un membre de l’équipe</h2>
+  <form action="ajouter_membre.php" method="POST" enctype="multipart/form-data" class="article-form">
+
+    <label for="nom">Nom complet</label>
+    <input type="text" id="nom" name="nom" placeholder="Nom du membre" required>
+
+    <label for="specialite">Spécialité</label>
+    <input type="text" id="specialite" name="specialite" placeholder="Ex: Cardiologue, Pédiatre..." required>
+
+    <label for="role">Rôle dans l’équipe</label>
+    <select id="role" name="role" required>
+      <option value="">-- Sélectionnez un rôle --</option>
+      <option value="Médecin chef">Médecin chef</option>
+      <option value="Assistant">Assistant</option>
+      <option value="Infirmier">Infirmier</option>
+      <option value="Autre">Autre</option>
+    </select>
+
+    <label for="photo">Photo</label>
+    <input type="file" id="photo" name="photo" accept="image/*" required title="Choisir une photo du membre">
+
+    <button type="submit">Ajouter le membre</button>
+  </form>
+</section>
+
+</body>
+</html>

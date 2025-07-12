@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ajouter un article</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <section class="form-article-container">
+    <h2>Ajouter un article</h2>
+    <form action="ajouter_article.php" method="POST" enctype="multipart/form-data" class="article-form">
+
+        <label for="titre">Titre de l’article</label>
+        <input type="text" id="titre" name="titre" placeholder="Titre de l'article" required />
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" placeholder="Brève description" rows="3" required></textarea>
+
+        <label for="contenu">Contenu complet</label>
+        <textarea id="contenu" name="contenu" placeholder="Contenu détaillé..." rows="6" required></textarea>
+
+        <label for="image">Image</label>
+        <input type="file" id="image" name="image" accept="image/*" required title="Choisir une image d'illustration" />
+
+  <button type="submit">Publier l’article</button>
+</form>
+
+  </section>
+
+</body>
+</html>
