@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Commentaires - Admin</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="admin-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Admin</h2>
+      <ul>
+        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+        <li><a href="equipe.html"><i class="fas fa-users"></i> Équipe</a></li>
+        <li><a href="listrendvous.html"><i class="fas fa-calendar-alt"></i> Rendez-vous</a></li>
+        <li><a href="commentaires.html"><i class="fas fa-comments"></i> Commentaires</a></li>
+      </ul>
+    </aside>
+
+    <!-- Contenu principal -->
+    <main class="admin-main">
+      <header class="admin-header">
+        <h1>Liste des Commentaires</h1>
+        <a href="interface.html" class="btn small">Retour au site</a>
+      </header>
+
+      <section class="admin-articles">
+        <div class="table-responsive">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Email</th>
+                <th>Article</th>
+                <th>Commentaire</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jean Dupont</td>
+                <td>jean@example.com</td>
+                <td>Comment prévenir l'hypertension</td>
+                <td>Très bon article, merci pour les conseils !</td>
+                <td>
+                  <button class="btn btn-delete"><i class="fas fa-trash"></i> Supprimer</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Amina Kossi</td>
+                <td>amina.kossi@gmail.com</td>
+                <td>Alimentation et immunité</td>
+                <td>Article très utile, j’ai appris beaucoup.</td>
+                <td>
+                  <button class="btn btn-delete"><i class="fas fa-trash"></i> Supprimer</button>
+                </td>
+              </tr>
+              <!-- Tu peux ajouter d'autres commentaires ici -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>
