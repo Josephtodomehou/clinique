@@ -78,9 +78,9 @@ a:hover {
   color: white;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .container h1{
-       font-size: 70%;
+       font-size: 98%;
   }
   .burger {
     display: block;
@@ -89,6 +89,7 @@ a:hover {
     flex-direction: column;
     background: #00332f;
     width: 100%;
+    gap: 1px;
     position: absolute;
     top: 60px;
     left: 0;
@@ -99,9 +100,24 @@ a:hover {
   }
   .nav-links li {
     text-align: center;
-    padding: 3px 0;
+    /* padding: 1px 0; */
   }
 
+}
+@media (max-width: 1000px) {
+  .container,
+  h1{
+    font-size: 80%;
+  }
+
+}
+@media (max-width: 760px) {
+  .container{
+    font-size: 70%;
+  }
+  .hero h3{
+    font-size: 60%;
+  }
 }
 
 
@@ -121,7 +137,7 @@ a:hover {
   z-index: 999;
 }
 .dropdown-menu li {
-  padding: 10px;
+  padding: 2px;
   border-bottom: 1px solid #eee;
 }
 .dropdown-menu li a {
