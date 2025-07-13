@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UNIVERSAL POLYCLINIQUE</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+</head>
+<body>
+<main>
+  <h2>Appointment Booking</h2>
+  <p class="form-desc">Choose the date and time that suit you best, and consult the doctor of your choice.</p>
+  <form action="#" method="post" id="appointment-form">
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Your full name" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="example@domain.com" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="+229 00 00 00 00" required pattern="[+0-9\s]{8,15}" />
+
+    <label for="doctor">Choose a Doctor</label>
+    <select id="doctor" name="doctor" required>
+      <option value="" disabled selected>-- Select --</option>
+      <option value="dr_mensah">Dr Mensah</option>
+      <option value="dr_doe">Dr Doe</option>
+      <option value="dr_smith">Dr Smith</option>
+    </select>
+
+    <label for="date">Appointment Date</label>
+    <input type="date" id="date" name="date" required />
+
+    <label for="time">Appointment Time</label>
+    <input type="time" id="time" name="time" required />
+
+    <label for="notes">Additional Notes (optional)</label>
+    <textarea id="notes" name="notes" placeholder="Please provide any details..."></textarea>
+
+    <button type="submit">Book Now</button>
+  </form>
+</main>
