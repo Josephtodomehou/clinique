@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Liste des rendez-vous</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<section class="rendezvous-table-section">
+  <h2>Liste des rendez-vous</h2>
+  <a href="interface.html" class="btn btn-delete">
+      <i class="fas fa-user-plus"></i> Retour en arrière
+    </a>
+    <a href="ajoutrendezvous.html" class="btn btn-validate">
+      <i class="fas fa-user-plus"></i> Ajouter un membre
+    </a>
+  <table class="rendezvous-table">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Téléphone</th>
+        <th>Date</th>
+        <th>Heure</th>
+        <th>Médecin</th>
+        <th>Notes</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jean Dupont</td>
+        <td>+229 98 76 54 32</td>
+        <td>2025-07-20</td>
+        <td>10:30</td>
+        <td>Dr Mensah</td>
+        <td>Suivi annuel</td>
+        <td>
+          <button class="btn btn-validate">Valider</button>
+          <button class="btn btn-reschedule">Reprogrammer</button>
+          <button class="btn btn-delete">Supprimer</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Jean Dupont</td>
+        <td>+229 98 76 54 32</td>
+        <td>2025-07-20</td>
+        <td>10:30</td>
+        <td>Dr Mensah</td>
+        <td>Suivi annuel</td>
+        <td>
+          <button class="btn btn-validate">Valider</button>
+          <button class="btn btn-reschedule">Reprogrammer</button>
+          <button class="btn btn-delete">Supprimer</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Jean Dupont</td>
+        <td>+229 98 76 54 32</td>
+        <td>2025-07-20</td>
+        <td>10:30</td>
+        <td>Dr Mensah</td>
+        <td>Suivi annuel</td>
+        <td>
+          <button class="btn btn-validate">Valider</button>
+          <button class="btn btn-reschedule">Reprogrammer</button>
+          <button class="btn btn-delete">Supprimer</button>
+        </td>
+      </tr>
+      <!-- Tu peux dupliquer cette ligne pour plus de patients -->
+    </tbody>
+  </table>
+</section>

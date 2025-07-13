@@ -78,7 +78,7 @@ a:hover {
   color: white;
   cursor: pointer;
 }
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .container h1{
        font-size: 98%;
   }
@@ -113,10 +113,10 @@ a:hover {
 }
 @media (max-width: 760px) {
   .container{
-    font-size: 70%;
+    font-size: 75%;
   }
   .hero h3{
-    font-size: 60%;
+    font-size: 65%;
   }
 }
 
@@ -277,18 +277,15 @@ a:hover {
 .rendezvous-section {
   background-color: #e0e5e9;
   padding: 50px 20px;
-}
-.about-section {
-  background-color: #e0e5e9;
-  padding: 50px 20px;
   margin-top: 20px;
 }
-.rendezvous-section h2,
-.about-section h2 {
+
+.rendezvous-section h2
+ {
   color: #00332f;
 }
-.rendezvous-container,
-.about-container{
+.rendezvous-container
+{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -298,23 +295,23 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.rendezvous-image img,
-.about-image img {
+.rendezvous-image img
+
+ {
   width: 100%;
   max-width: 500px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.rendezvous-content,
-.about-content {
+.rendezvous-content
+ {
   max-width: 500px;
 }
 
 
 
-.rendezvous-content p,
-.rendezvous-content p {
+.rendezvous-content p{
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 25px;
@@ -574,6 +571,7 @@ form button:hover {
 /* Main content */
 .admin-main {
   flex-grow: 1;
+  /* width:100% !important; */
   padding: 30px 20px;
   background-color: #f5f5f5;
 }
@@ -725,7 +723,7 @@ form button:hover {
 
 /* ======= Formulaire prise de rendez-vous ======= */
 
-main {
+main:not(.admin-main){
   max-width: 600px;
   margin: 30px auto 60px;
   padding: 0 20px;
@@ -810,5 +808,120 @@ button[type="submit"]:hover {
 @media (max-width: 480px) {
   form {
     padding: 20px 15px;
+  }
+}
+
+/* ===== Tableau des Rendez-vous ===== */
+
+.rendezvous-table-section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.rendezvous-table-section h2 {
+  text-align: center;
+  color: #0055aa;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.rendezvous-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.rendezvous-table th,
+.rendezvous-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+.rendezvous-table th {
+  background-color: #0055aa;
+  color: #fff;
+  font-weight: bold;
+}
+
+.rendezvous-table tbody tr:hover {
+  background-color: #f1f7ff;
+}
+
+/* Boutons */
+.btn {
+  padding: 6px 10px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  color: white;
+}
+
+.btn-validate {
+  background-color: #28a745;
+}
+.btn-validate:hover {
+  background-color: #218838;
+}
+
+.btn-reschedule {
+  background-color: #ffc107;
+  color: #333;
+}
+.btn-reschedule:hover {
+  background-color: #e0a800;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+}
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .rendezvous-table, .rendezvous-table thead, .rendezvous-table tbody, .rendezvous-table th, .rendezvous-table td, .rendezvous-table tr {
+    display: block;
+    font-size: 95%;
+  }
+
+  .rendezvous-table thead {
+    display: none;
+  }
+
+  .rendezvous-table tr {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    background-color: #fff;
+    padding: 10px;
+  }
+
+  .rendezvous-table td {
+    text-align: left;
+    
+    /* padding-left: 50%; */
+    position: relative;
+  }
+  .rendezvous-table td button {
+    font-size: 90%;
+  }
+
+  .rendezvous-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    width: 45%;
+    font-weight: bold;
+    text-align: right;
   }
 }
