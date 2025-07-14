@@ -24,6 +24,7 @@ p,h3{
   padding: 5px;
   text-align: justify;
   text-align: center;
+  justify-content: center;
 }
 a {
   text-decoration: none;
@@ -157,12 +158,68 @@ a:hover {
 }
 
 /* --- Contenu --- */
-.hero {
+/* .hero {
   background: linear-gradient(135deg, #0288d1, #26c6da);
   color: white;
   padding: 60px 20px;
   text-align: center;
+} */
+ /* === Hero Section (Accueil) === */
+.hero {
+  background: linear-gradient(rgba(0, 121, 107, 0.7), rgba(0, 121, 107, 0.7)),
+              url('images/t1.jpg') no-repeat center center/cover;
+  padding: 25px 10px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  max-width: 900px;
+}
+
+.hero h3 {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.hero .btn {
+  background-color: #ffffff;
+  color: #00796b;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #004d40;
+  color: white;
+}
+
+/* === Responsive === */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero h3 {
+    font-size: 1.1rem;
+  }
+
+  .hero .btn {
+    padding: 8px 15px;
+  }
+}
+
 .btn {
   display: inline-block;
   margin-top: 20px;
@@ -276,7 +333,7 @@ a:hover {
 /* ======= SECTION RENDEZ-VOUS  sur index======= */
 
 .rendezvous-section {
-  background-color: #e0e5e9;
+  background-color: #f0f4f4;
   padding: 50px 20px;
   margin-top: 20px;
 }
